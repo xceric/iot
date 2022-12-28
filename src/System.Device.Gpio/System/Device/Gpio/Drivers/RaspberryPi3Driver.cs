@@ -135,6 +135,7 @@ public class RaspberryPi3Driver : GpioDriver
         boardInfo = RaspberryBoardInfo.LoadBoardInfo();
         return boardInfo.BoardModel switch
         {
+            RaspberryBoardInfo.Model.RaspberryPi2B or
             RaspberryBoardInfo.Model.RaspberryPi3B or
             RaspberryBoardInfo.Model.RaspberryPi3APlus or
             RaspberryBoardInfo.Model.RaspberryPi3BPlus or
